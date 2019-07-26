@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang=ru>
 <head>
-    <meta charset=utf-8>
+    <meta charset="utf-8">
     <title>ChatLead.io</title>
-    <meta name=description content>
-    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
-    <link rel="shortcut icon" href="../img/logo_icon.ico" type=image/x-icon>
+    <meta name="description" content>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="../img/logo_icon.ico" type="image/x-icon">
     
-    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel=stylesheet href="../css/dashboard.css?v=1.0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../css/dashboard.css?v=1.0.0">
     
     <meta property="og:url" content=""/>
     <meta property="og:type" content="website"/>
@@ -16,14 +16,14 @@
     <meta property="og:description" content=""/>
     <meta property="og:image" content="../img/logo_icon.png"/>
 
-    <meta name=theme-color content=#ffffff>
-    <meta name=msapplication-navbutton-color content=#ffffff>
-    <meta name=apple-mobile-web-app-status-bar-style content=#ffffff>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
 </head>
-<body id=page-body>
+<body id="page-body">
 
-<div class="layout  js-bot-panel" id=page-layout>
-    <div class=main_layout>
+<div class="layout  js-bot-panel" id="page-layout">
+    <div class="main_layout">
         <header id="header" class="add-status">
             <div class="header__container">
                 <div class="header__bot-selector">
@@ -67,23 +67,45 @@
         </header>
 
         <main id="main">
-            <section class="settings-body-column settings-body-column--page "  style="margin-top: 10px;">
+            <section class="settings-body-column settings-body-column--page"  style="margin-top: 10px;">
+
+                <div class="main-page-container">
+                    <!-- Form to add chat bot -->
+                    <form action="#" class="add-bot">
+                        <input type="text" name="name" placeholder="Название бота">
+                        <button type="submit">Добавить</button>
+                    </form>
+                    <!-- Bot list -->
+                    <ul class="bot-list">
+                        <li>
+                            <div class="bot-list__header">
+                                <h2>ТЕСТ бот</h2>
+                                <button class="bot-list__edit default-btn default-btn--icon-style default-btn--outline">
+                                    <img src="../img/buttons/edit.png" alt="Edit" class="btn-icon">
+                                    <span class="text-tooltip text-tooltip--top">Редактировать</span>
+                                </button>
+                            </div>
+                            <div class="bot-list__messengers">
+                                <img src="../img/facebook-messenger-logo-big.png" alt="Facebook">
+                                <img src="../img/telegram-icon-big.png" alt="Telegram">
+                                <img src="../img/vk-logo-big.png" alt="Facebook">
+                                <img src="../img/whatsapp-big.png" alt="WhatsApp">
+                            </div>
+                            <p class="bot-list__period">Тестовый период заканчивается церез <span>14 дней</span></p>
+                            <div class="bot-list__footer">
+                                <button class="bot-list__change">Изменить</button>
+                                <button class="bot-list__remove default-btn default-btn--icon-style">
+                                    <img src="../img/buttons/trash.png" alt="Delete">
+                                    <span class="text-tooltip text-tooltip--top">Удалить</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Bot list end -->
+                </div>
+
                 <div class="container columns-container">
                     <div class="menu-trigger-btn" id="faq-menu-trigger"> </div>
-                    <aside id="sidebar">
-                        
-
-
-                        
-                    </aside>
-
-                    <div class="wide-column">
-                        <article>
-                            
-                            
-                            
-                        </article>
-                    </div>
                 </div>
             </section>
         </main>

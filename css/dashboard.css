@@ -27583,3 +27583,250 @@ img.emoji {
         top: calc(100% + 1px)
     }
 }
+
+.main-page-container {
+    padding: 0 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* add bot, bot-list (main page)*/ 
+.add-bot, .bot-list > li {
+    width: 380px;
+}
+
+.add-bot {
+    padding-top: 40px;
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-bot input {
+    width: 250px;
+    font-size: 18px;
+    border-bottom: 1px solid #D0D0D0;
+    background: transparent;
+}
+
+.add-bot button {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 115px;
+    height: 38px;
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #517DF9;
+}
+
+.bot-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bot-list > li {
+    padding: 60px 35px 23px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(69, 63, 63, 0.16);
+    position: relative;
+}
+
+.bot-list > li:last-child {
+    margin-right: 0;
+}
+
+.bot-list > li:before {
+    content: '';
+    display: block;
+    border-top: 1px solid #D0D0D0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 74px;
+}
+
+.bot-list .default-btn {
+    position: relative;
+    z-index: 1;
+}
+
+.bot-list .default-btn:hover {
+    opacity: 1;
+}
+
+.bot-list .default-btn .text-tooltip {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bot-list .default-btn:hover .text-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bot-list__header {
+    margin-bottom: 70px;
+    display: flex;
+}
+
+.bot-list__header h2 {
+    margin-right: 10px;
+    font-size: 29px;
+    color: #000;
+    letter-spacing: 0.05em;
+}
+
+.bot-list__edit {
+    padding: 4px 8px;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    border-color: #D0D0D0;
+    position: relative;
+    top: 2px;
+}
+
+.bot-list__edit img {
+    margin-right: 0;
+}
+
+.bot-list__messengers {
+    margin-bottom: 44px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bot-list__messengers img {
+    margin-right: 37px;
+}
+
+.bot-list__messengers img:last-child {
+    margin-right: 0;
+}
+
+.bot-list__period {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #707070;
+}
+
+.bot-list__period span {
+    color: #000;
+}
+
+.bot-list__footer {
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bot-list__change {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #517DF9;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.bot-list__remove {
+    border: none;
+}
+
+/*add bot, bot-list responsive styles*/
+@media screen and (max-width: 990px) {
+    .add-bot, .bot-list > li {
+        width: 260px;
+    }
+
+    .add-bot input {
+        width: 62%;
+        font-size: 17px;
+    }
+
+    .add-bot button {
+        font-size: 12px;
+        width: 35px;
+        min-width: 90px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .bot-list > li {
+        padding: 40px 25px 20px;
+    }
+
+    .bot-list > li:before {
+        bottom: 63px;
+    }
+
+    .bot-list__header {
+        margin-bottom: 40px;
+    }
+
+    .bot-list__header h2 {
+        font-size: 25px;
+    }
+
+    .bot-list__edit {
+        top: 0;
+    }
+
+    .bot-list__messengers {
+        margin-bottom: 30px;
+    }
+
+    .bot-list__messengers img {
+        margin-right: 20px;
+        width: 35px;
+        height: auto;
+    }
+
+    .bot-list__period {
+        margin-bottom: 33px;
+        font-size: 12px;
+    }
+
+    .bot-list__footer {
+        padding: 0;
+    }
+
+    .bot-list__change {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .bot-list__remove img {
+        width: 22px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main-page-container {
+        padding: 0 20px;
+    }
+
+    .add-bot, .bot-list > li {
+        width: 100%;
+    }
+
+    .add-bot {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+    .bot-list__header {
+        margin-bottom: 30px;
+    }
+
+    .bot-list__messengers {
+        flex-wrap: wrap;
+    }
+}
