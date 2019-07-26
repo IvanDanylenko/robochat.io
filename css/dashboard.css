@@ -27584,15 +27584,9 @@ img.emoji {
     }
 }
 
-.main-page-container {
-    padding: 0 40px;
-    position: relative;
-    z-index: 2;
-}
-
 /* add bot, bot-list (main page)*/ 
 .add-bot, .bot-list > li {
-    width: 380px;
+    width: 290px;
 }
 
 .add-bot {
@@ -27603,8 +27597,8 @@ img.emoji {
 }
 
 .add-bot input {
-    width: 250px;
-    font-size: 18px;
+    width: 62%;
+    font-size: 17px;
     border-bottom: 1px solid #D0D0D0;
     background: transparent;
 }
@@ -27613,7 +27607,7 @@ img.emoji {
     font-size: 13px;
     text-transform: uppercase;
     text-align: center;
-    width: 115px;
+    width: 35%;
     height: 38px;
     line-height: 38px;
     display: flex;
@@ -27629,7 +27623,7 @@ img.emoji {
 }
 
 .bot-list > li {
-    padding: 60px 35px 23px;
+    padding: 40px 30px 20px;
     margin-right: 20px;
     margin-bottom: 30px;
     background: #fff;
@@ -27649,7 +27643,7 @@ img.emoji {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 74px;
+    bottom: 67px;
 }
 
 .bot-list .default-btn {
@@ -27672,21 +27666,21 @@ img.emoji {
 }
 
 .bot-list__header {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     display: flex;
 }
 
 .bot-list__header h2 {
     margin-right: 10px;
-    font-size: 29px;
+    font-size: 27px;
     color: #000;
     letter-spacing: 0.05em;
 }
 
 .bot-list__edit {
-    padding: 4px 8px;
-    width: 33px;
-    height: 33px;
+    padding: 4px 7px;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
     border-color: #D0D0D0;
     position: relative;
@@ -27695,16 +27689,19 @@ img.emoji {
 
 .bot-list__edit img {
     margin-right: 0;
+    width: 15px;
 }
 
 .bot-list__messengers {
-    margin-bottom: 44px;
+    margin-bottom: 30px;
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
 .bot-list__messengers img {
-    margin-right: 37px;
+    /*margin-right: 37px;*/
+    width: 38px;
 }
 
 .bot-list__messengers img:last-child {
@@ -27728,8 +27725,8 @@ img.emoji {
 }
 
 .bot-list__change {
-    margin-right: 20px;
-    font-size: 18px;
+    margin-right: 15px;
+    font-size: 16px;
     color: #517DF9;
     text-transform: uppercase;
     background: transparent;
@@ -27737,6 +27734,76 @@ img.emoji {
 
 .bot-list__remove {
     border: none;
+}
+
+.bot-list__remove img {
+    height: 22px;
+}
+
+.bot-remove-modal {
+    display: none;
+    background: rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.bot-remove-modal.show {
+    display: flex;
+}
+
+.bot-remove {
+    padding: 32px 34px 45px;
+    width: 454px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #262626;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.bot-remove img {
+    margin-bottom: 20px;
+}
+
+.bot-remove h3 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.bot-remove p {
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+
+.bot-remove__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.bot-remove__buttons button {
+    width: 153px;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+}
+
+.bot-remove__buttons .remove {
+    margin-right: 40px;
+    color: #517DF9;
+    background: transparent;
+    border: 1px solid #517DF9;
+}
+
+.bot-remove__buttons .cansel {
+    color: #fff;
+    background: #517DF9;
 }
 
 /*add bot, bot-list responsive styles*/
