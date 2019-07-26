@@ -27775,11 +27775,13 @@ img.emoji {
 .bot-remove h3 {
     margin-bottom: 15px;
     font-size: 28px;
+    text-align: center;
 }
 
 .bot-remove p {
     margin-bottom: 35px;
     font-size: 17px;
+    text-align: center;
 }
 
 .bot-remove__buttons {
