@@ -27583,3 +27583,476 @@ img.emoji {
         top: calc(100% + 1px)
     }
 }
+
+
+/* add bot, bot-list (main page)*/ 
+
+.blue-btn {
+    display: block;
+    margin: 0;
+    width: 150px;
+    height: 36px;
+    line-height: 34px;
+    min-height: 30px;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #517DF9;
+    border-radius: 5px;
+}
+
+.panel__logo {
+    width: 210px;
+    background-image: url(../img/logo_panel.png);
+    background-size: 125px;
+}
+
+.add-bot, .bot-list > li {
+    width: 290px;
+}
+
+.add-bot {
+    padding-top: 40px;
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-bot input {
+    width: 62%;
+    font-size: 17px;
+    border-bottom: 1px solid #D0D0D0;
+    background: transparent;
+}
+
+.add-bot button {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 35%;
+    height: 38px;
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #517DF9;
+}
+
+.bot-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bot-list > li {
+    padding: 40px 30px 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(69, 63, 63, 0.16);
+    position: relative;
+}
+
+.bot-list > li:last-child {
+    margin-right: 0;
+}
+
+.bot-list > li:before {
+    content: '';
+    display: block;
+    border-top: 1px solid #D0D0D0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 67px;
+}
+
+.bot-list .default-btn {
+    position: relative;
+    z-index: 1;
+}
+
+.bot-list .default-btn:hover {
+    opacity: 1;
+}
+
+.bot-list .default-btn .text-tooltip {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bot-list .default-btn:hover .text-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bot-list__header {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.bot-list__header h2 {
+    margin-right: 10px;
+    font-size: 27px;
+    color: #000;
+    letter-spacing: 0.05em;
+}
+
+.bot-list__edit {
+    padding: 4px 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #D0D0D0;
+    position: relative;
+    top: 2px;
+}
+
+.bot-list__edit img {
+    margin-right: 0;
+    width: 15px;
+}
+
+.bot-list__messengers {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bot-list__messengers img {
+    /*margin-right: 37px;*/
+    width: 38px;
+}
+
+.bot-list__messengers img:last-child {
+    margin-right: 0;
+}
+
+.bot-list__period {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #707070;
+}
+
+.bot-list__period span {
+    color: #000;
+}
+
+.bot-list__footer {
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bot-list__change {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #517DF9;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.bot-list__remove {
+    border: none;
+}
+
+.bot-list__remove img {
+    height: 22px;
+}
+
+.bot-remove-modal {
+    display: none;
+    background: rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.bot-remove-modal.show {
+    display: flex;
+}
+
+.bot-remove {
+    padding: 32px 34px 45px;
+    width: 454px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #262626;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.bot-remove img {
+    margin-bottom: 20px;
+}
+
+.bot-remove h3 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.bot-remove p {
+    margin-bottom: 35px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.bot-remove__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.bot-remove__buttons button {
+    width: 153px;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+    text-transform: none;
+}
+
+.bot-remove__buttons .remove {
+    margin-right: 40px;
+    color: #517DF9;
+    background: transparent;
+    border: 1px solid #517DF9;
+}
+
+/*add bot, bot-list responsive styles*/
+@media screen and (max-width: 990px) {
+    .add-bot, .bot-list > li {
+        width: 260px;
+    }
+
+    .add-bot input {
+        width: 62%;
+        font-size: 17px;
+    }
+
+    .add-bot button {
+        font-size: 12px;
+        width: 35px;
+        min-width: 90px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .bot-list > li {
+        padding: 40px 25px 20px;
+    }
+
+    .bot-list > li:before {
+        bottom: 63px;
+    }
+
+    .bot-list__header {
+        margin-bottom: 40px;
+    }
+
+    .bot-list__header h2 {
+        font-size: 25px;
+    }
+
+    .bot-list__edit {
+        top: 0;
+    }
+
+    .bot-list__messengers {
+        margin-bottom: 30px;
+    }
+
+    .bot-list__messengers img {
+        margin-right: 20px;
+        width: 35px;
+        height: auto;
+    }
+
+    .bot-list__period {
+        margin-bottom: 33px;
+        font-size: 12px;
+    }
+
+    .bot-list__footer {
+        padding: 0;
+    }
+
+    .bot-list__change {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .bot-list__remove img {
+        width: 22px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main-page-container {
+        padding: 0 20px;
+    }
+
+    .add-bot, .bot-list > li {
+        width: 100%;
+    }
+
+    .add-bot {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+    .bot-list__header {
+        margin-bottom: 30px;
+    }
+
+    .bot-list__messengers {
+        flex-wrap: wrap;
+    }
+}
+
+/* DASHBOARD 6, TOOLS*/
+
+.tools h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #000;
+}
+
+.tools__list {
+    padding: 50px 60px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16);
+}
+
+.tools__list li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.tools__item_narrow {
+    width: 24%
+}
+
+.tools__item_wide {
+    width: 35%;
+}
+
+.tools__list h3 {
+    margin-bottom: 10px;
+    color: #82848B;
+}
+
+.tools__list .tools__img {
+    margin-bottom: 40px;
+    height: 260px;
+}
+
+.tools__list .tools__img img {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+/*tools responsive table*/
+
+.tools-page .responsivetable>*>:first-child {
+    width: 60%;
+}
+
+/*tools-settins*/
+
+.tools-settins {
+    background: red;
+}
+
+.tools-settings__controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tools-settings__controls .blue-btn {
+    text-transform: none;
+}
+
+
+
+/* STATISTICS*/
+
+.statistics__list {
+    margin-bottom: 50px;
+}
+
+.statistics__list li {
+    padding: 10px 10px 10px 75px;
+    margin-bottom: 24px;
+    width: 230px;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+}
+
+.statistics__list li:last-child {
+    margin-bottom: 0;
+}
+
+.statistics__list .nlo {
+    background-image: url("../img/statistics/nlo.png");
+}
+
+.statistics__list .alien-smiles {
+    background-image: url("../img/statistics/alien_smiles.png");
+}
+
+.statistics__list .alien-sad {
+    background-image: url("../img/statistics/alien_sad.png");
+}
+
+.statistics__list h3 {
+    font-size: 17px;
+    color: #82848B;
+}
+
+.statistics__list .number {
+    font-size: 22px;
+    color: #000;
+}
+
+.statistics__export {
+    width: 230px;
+    text-align: center;
+}
+
+.statistics__export .btn {
+    padding-left: 20px;
+    width: 100%;
+    color: #517DF9;
+    border: 1px solid #517DF9;
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: left;
+    background: url("../img/statistics/export-csv.png") no-repeat 90% center;
+}
+
+.statistics__export .btn:hover {
+    background-color: transparent;
+}
+
+.statistics__export p {
+    color: #82848B;
+    font-size: 13px;
+}

@@ -1,0 +1,124 @@
+.blue-btn-round {
+	border-radius: 33px;
+	text-transform: none;
+}
+
+.border-gray {
+	border: 1px solid #D0D0D0;
+	border-radius: 4px;
+}
+
+.account {
+	padding-top: 20px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 500px;
+}
+
+.account-delete-avatar {
+	padding: 0;
+}
+
+.account-delete-avatar img.btn-icon {
+	margin: 0;
+}
+
+.account h2 {
+	margin-bottom: 30px;
+	font-size: 24px;
+	color: #517DF9;
+}
+
+.account form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.account__photo {
+	width: 100px;
+}
+
+.account__avatar {
+	border-radius: 4px;
+	border: 1px solid#D0D0D0;
+}
+
+.account__photo-options {
+	padding-top: 4px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.account__photo-options button {
+	background: transparent;
+}
+
+.account__photo-change {
+	color: #517DF9;
+	font-size: 15px;
+}
+
+.account__data {
+	width: 70%;
+	min-width: 200px;
+}
+
+.account__data .form-group {
+	margin-bottom: 25px;
+}
+
+.account__data .form-group label {
+	margin-bottom: 10px;
+	display: block;
+	color: #333333;
+}
+
+.account__data .form-group input {
+	padding: 5px 10px;
+	display: block;
+	width: 100%;
+	border: 1px solid #D0D0D0;
+	background: #fff;
+	font-size: 15px;
+}
+
+.account__change-password {
+	display: flex;
+	justify-content: space-between;
+}
+
+.account__change-password .form-group {
+	width: 45%;
+}
+
+/* balance */
+
+.balance {
+
+}
+
+.balance__content {
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	background: #fff url("../img/account/balance.png") no-repeat;
+	background-position: 20px center;
+	background-size: auto 55%;
+}
+
+.balance__content > div {
+	margin: 0 auto;
+	max-width: 80px;
+	white-space: nowrap;
+}
+
+.balance__text {
+	font-size: 14px;
+	color: #82848B;
+}
+
+.balance__total {
+	font-size: 26px;
+	color: #303136;
+}

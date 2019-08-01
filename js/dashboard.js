@@ -125,6 +125,20 @@ $('.ui-textarea-toolbar__btn--btn-text').click(function() {
 $('.ui-message-row').on('click','.remove-btn',function() {
  	$(this).parent().remove();
 });
+// bot-list-remove
+$('.bot-list').on('click', '.bot-list__remove', function(){
+	$('.bot-remove-modal').addClass('show');
+});
+$('.bot-remove-modal').on('click', '.cansel', function(){
+	$('.bot-remove-modal').removeClass('show');
+});
+// account-avatar-remove
+$('.account__photo').on('click', '.account-delete-avatar', function(){
+	$('.bot-remove-modal').addClass('show');
+});
+$('.bot-remove-modal').on('click', '.cansel', function(){
+	$('.bot-remove-modal').removeClass('show');
+});
 
 
 function _typeof(e) {
