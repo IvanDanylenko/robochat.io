@@ -95,10 +95,6 @@
 
 /* balance */
 
-.balance {
-
-}
-
 .balance__content {
 	padding: 20px 10px;
 	margin-bottom: 20px;
@@ -121,4 +117,22 @@
 .balance__total {
 	font-size: 26px;
 	color: #303136;
+}
+
+/* bot-selection */
+
+.bot-selection {
+
+}
+
+.bot-selection__step {
+
+}
+
+.bot-selection__breadcrumbs {
+
+}
+
+.bot-selection__breadcrumbs li.active {
+	
 }
