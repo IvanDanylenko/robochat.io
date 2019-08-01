@@ -132,6 +132,13 @@ $('.bot-list').on('click', '.bot-list__remove', function(){
 $('.bot-remove-modal').on('click', '.cansel', function(){
 	$('.bot-remove-modal').removeClass('show');
 });
+// account-avatar-remove
+$('.account__photo').on('click', '.account-delete-avatar', function(){
+	$('.bot-remove-modal').addClass('show');
+});
+$('.bot-remove-modal').on('click', '.cansel', function(){
+	$('.bot-remove-modal').removeClass('show');
+});
 
 
 function _typeof(e) {
